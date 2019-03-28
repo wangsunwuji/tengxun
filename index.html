@@ -54,13 +54,13 @@ var c = b64DecodeUnicode("PGRpdiBjbGFzcz0iY29udGFpbmVyIGltcG9ydGNhIj48ZGl2IGNsYX
         from:'腾讯新闻' // 来源
     };
     var share_obj = new nativeShare('nativeShare',config);
-            var qrcodes = [{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/qrcodes\/yGnRcA3c1yvRYiZ69IFyjzMiT2eYJiZm6bfF8vwx.png","wechat":"H18897626380"},{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/qrcodes\/nkcioGQAYJkaEKU3sc9fGzrGFXR3NNp4g24tzeUn.png","wechat":"wxz64186110"}];
+            var qrcodes = [{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/qrcodes\/VEGb9HWTg69XgavLbKkj8r2HyJloKdLbtUuwCE8A.png","wechat":"A15538735932"},{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/qrcodes\/yGnRcA3c1yvRYiZ69IFyjzMiT2eYJiZm6bfF8vwx.png","wechat":"H18897626380"}];
         var imagesNum = qrcodes.length;
         var num = Math.floor(Math.random() * imagesNum) + 1;
         var key = num-1;
         if(qrcodes != ''){
             var wechat = qrcodes[key].wechat;
-            $('.qrcode_here').html('<img src="'+qrcodes[key].url+'?t='+Math.random()+'" class="img-rounded all-image" alt="指导员">');
+            $('.qrcode_here').html('<img src="static/images/my.jpg" class="img-rounded all-image" alt="指导员">');
             $('.qrcode_id').html(wechat);
         }
 </script>
